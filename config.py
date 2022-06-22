@@ -3,8 +3,8 @@ import sys
 import motion
 from naoqi import *
 import almath
-IP = "192.168.221.175"
-# IP = "127.0.0.1"
+#IP = "192.168.221.175" # Ip for physical Robot Connection 
+IP = "127.0.0.1" #IP for virtual Connectin means choregraphe
 PORT = 9559
 if (IP == ""):
   print "IP address not defined, aborting"

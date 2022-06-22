@@ -3,6 +3,8 @@ from connection import *
 # import vision_getandsaveimage as vg
 # import find_ball as fb
 import kick_ball
+import find_ball
+import kick
 import time
 names = list()
 times = list()
@@ -17,10 +19,14 @@ times.append([ 2.40000])
 keys.append([ 0.51487])
 
 motion.angleInterpolation(names, keys, times, True);
-# print "Kick Left"
-kick_ball.kick_left()  
+# print "_______________Kick Left___________________"
+# kick.kick_left();
+
+print "_______________Kick Right___________________"
+kick.kick_right();  
 
 # print "Kick Right"
+# kick_ball.adjust_right()
 # kick_ball.kick_right()
 
 # adjust = fb.findball()
